@@ -4,16 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Glitch Art — NetArt Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+
+    <!-- NAVBAR (unchanged) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">NetArt Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -27,33 +32,41 @@
       </div>
     </nav>
 
-    <main class="container project-hero text-white">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <h1 class="glitch" data-text="GLITCH">GLITCH</h1>
-          <p class="lead">Play with RGB-splits, displaced layers and animated corruption to create unexpected textures.</p>
-          <p>These pieces are inspired by internet error aesthetics — colors bleed, channels misalign and shapes fall out of sync.</p>
-          <a class="btn btn-outline-light" href="index.html">Back to projects</a>
-        </div>
-        <div class="col-md-5">
-          <div class="thumb thumb-glitch" style="height:220px; border-radius:8px"></div>
-        </div>
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+
+      <h1 class="text-center mb-4" style="color:#DA627D;">Glitch Art</h1>
+      <p class="text-center lead" style="color:#DA627D;">"Glitchy Deers"</p>
+
+      <!-- LARGE IMAGE -->
+      <div class="text-center mb-5">
+        <img 
+          src="https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/image-42e6fa93-6ee3-470e-8ba5-cf14b561d2c8_orig.png" 
+          class="img-fluid shadow-lg"
+          style="max-width: 900px; border-radius: 12px;"
+          alt="Glitch Art Project"
+        >
       </div>
 
-      <section class="mt-5">
-        <h3>A simple CSS glitch demo</h3>
-        <div class="p-4" style="background:#010012; border-radius:8px; border:1px solid rgba(255,255,255,0.03)">
-          <p>Refresh to see the layered color offsets animated. The hero title is layered using pseudo-elements for a subtle corrupt effect.</p>
-        </div>
+      <!-- OPTIONAL DESCRIPTION -->
+      <section class="mx-auto" style="max-width: 800px;">
+        <h3 style="color:#DA627D;">Project Description</h3>
+        <p>
+          This glitch piece experiments with RGB splitting, layer displacement, and distortion
+          effects to intentionally break the image in an aesthetic way. The visual noise highlights
+          digital fragility and the beauty that emerges from corrupted data.
+        </p>
+
+        <a href="index.html" class="btn" style="background:#DA627D; color:white;">Back to Projects</a>
       </section>
+
     </main>
 
+    <!-- FOOTER (unchanged) -->
     <footer class="py-4 bg-dark text-white mt-5">
       <div class="container d-flex justify-content-between align-items-center">
         <small>© 2025 NetArt Portfolio</small>
-        <div>
-          <a class="text-white me-3" href="about.html">About</a>
-        </div>
+        <a class="text-white" href="about.html">About</a>
       </div>
     </footer>
 
