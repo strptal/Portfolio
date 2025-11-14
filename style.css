@@ -1,0 +1,58 @@
+
+:root{
+	--bg:#071021;
+	--accent:#00f0ff;
+	--accent2:#ff2dff;
+	--muted:rgba(255,255,255,0.75);
+}
+html,body{height:100%;}
+body{
+	margin:0;
+	background:linear-gradient(180deg,#02040a 0%, var(--bg) 50%);
+	color:var(--muted);
+	font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+.hero{
+	background:linear-gradient(90deg, rgba(0,0,0,0.4), rgba(5,1,20,0.6));
+	padding-top:4rem;
+	padding-bottom:4rem;
+}
+.glitch{
+	position:relative;
+	display:inline-block;
+	color:#fff;
+	font-weight:700;
+}
+.glitch::before,
+.glitch::after{
+	content:attr(data-text);
+	position:absolute;
+	left:0; top:0;
+	width:100%; height:100%;
+	mix-blend-mode:screen;
+	clip-path:polygon(0 0,100% 0,100% 33%,0 33%);
+}
+.glitch::before{animation:shift 2s infinite linear; color:var(--accent);} 
+.glitch::after{animation:shift2 3s infinite linear; color:var(--accent2);} 
+@keyframes shift{0%{transform:translate(0,0)}50%{transform:translate(-6px,2px)}100%{transform:translate(0,0)}}
+@keyframes shift2{0%{transform:translate(0,0)}50%{transform:translate(6px,-2px)}100%{transform:translate(0,0)}}
+
+.net-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); transition:transform .18s ease, box-shadow .18s ease}
+.net-card:hover{transform:translateY(-6px) scale(1.01); box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.card-link{text-decoration:none}
+
+.thumb{height:140px; border-radius:6px; background-size:cover; background-position:center; box-shadow:inset 0 0 40px rgba(0,0,0,0.25)}
+.thumb-glitch{background-image:linear-gradient(135deg,#ff2dff 0%, #00f0ff 50%, #ffd000 100%); filter:contrast(1.4) saturate(1.2); animation:glow 4s linear infinite}
+.thumb-logo{background-image:linear-gradient(135deg,#0ff 0%, #a0f 50%); display:flex; align-items:center; justify-content:center}
+.thumb-meme{background-image:linear-gradient(135deg,#ff8 0%, #ff2d2d 50%);}
+.thumb-city{background-image:linear-gradient(135deg,#1e1e3f 0%, #2b6cff 50%);}
+@keyframes glow{0%{filter:hue-rotate(0deg)}50%{filter:hue-rotate(40deg)}100%{filter:hue-rotate(0deg)}}
+
+/* Project page helpers */
+.project-hero{padding:3rem 0 2rem;}
+.project-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px}
+.city-block{height:90px; background:linear-gradient(180deg,#0a0a12,#202040); border-radius:6px}
+
+@media (max-width:576px){
+	.hero{padding-top:2.5rem;padding-bottom:2.5rem}
+}
