@@ -1,9 +1,8 @@
-
 :root{
-	--bg:#071021;
-	--accent:#00f0ff;
-	--accent2:#ff2dff;
-	--muted:rgba(255,255,255,0.75);
+	--bg:F9DbbD;
+	--accent:#FFA5AB;
+	--accent2:#DA627D;
+	--muted:#450920;
 }
 html,body{height:100%;}
 body{
@@ -52,6 +51,21 @@ body{
 .project-hero{padding:3rem 0 2rem;}
 .project-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px}
 .city-block{height:90px; background:linear-gradient(180deg,#0a0a12,#202040); border-radius:6px}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
 
 @media (max-width:576px){
 	.hero{padding-top:2.5rem;padding-bottom:2.5rem}
