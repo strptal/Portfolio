@@ -1,123 +1,116 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Net Art Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VZ1I2Qe3j5f5bY5a0F6Y5n3z0E6q2G5c5Y5q5c5" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                font-family: 'Garamond', serif;
-            }
-        </style>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NetArt Portfolio</title>
 
-        <nav class="navbar navbar-expand-lg text-white" style="background-color: #450920;">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">NetArt Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="glitch.html">Glitch Art</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="logo.html">Logo</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="meme.html">Meme</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="newartcity.html">New Art City</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-        <header class="hero py-5 text-center text-white" style="background-color: #A53860;">
-            <div class="container">
-                <h1 class="display-4 glitch">Net Art Portfolio</h1>
-                <p class="lead">A small collection of experimental pieces: Glitch, Logo, Meme and New Art City.</p>
-                <a href="#projects" class="btn btn-light mt-3">Explore Projects</a>
-            </div>
-        </header>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">NetArt Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-     <main class="container my-5" id="projects">
-    <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-            <a class="card-link" href="glitch.html">
-                <div class="card net-card h-100 text-white">
-                    <div class="card-body d-flex flex-column">
-
-                        <div class="thumb thumb-glitch mb-3" 
-                             style="
-                                background-image: url('https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/image-42e6fa93-6ee3-470e-8ba5-cf14b561d2c8_orig.png');
-                                background-size: cover;
-                                background-position: center;
-                             ">
-                        </div>
-
-                        <h5 class="card-title" style="color: #DA627D;">Glitch Art</h5>
-                        <p class="card-text" style="color: #DA627D;">Glitchy Deers</p>
-
-                    </div>
-                </div>
-            </a>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="glitch.html">Glitch Art</a></li>
+            <li class="nav-item"><a class="nav-link" href="logo.html">Logo</a></li>
+            <li class="nav-item"><a class="nav-link" href="meme.html">Meme</a></li>
+            <li class="nav-item"><a class="nav-link" href="newartcity.html">New Art City</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
         </div>
-    </div>
-</main>
+      </div>
+    </nav>
 
-                        </div>
-                    </a>
-                </div>
+    <!-- ⭐ PROJECT GRID SECTION ⭐ -->
+    <main class="container my-5" id="projects">
+      <h1 class="text-center mb-4" style="color:#DA627D;">My Work</h1>
 
-                <div class="col-md-6 col-lg-3">
-                    <a class="card-link" href="logo.html">
-                        <div class="card net-card h-100 text-white">
-                            <div class="card-body d-flex flex-column">
-                                <div class="thumb thumb-logo mb-3"></div>
-                                <h5 class="card-title">Logo</h5>
-                                <p class="card-text">Playful identity explorations mixing synthwave colours.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+      <div class="row g-4 justify-content-center">
 
-                <div class="col-md-6 col-lg-3">
-                    <a class="card-link" href="meme.html">
-                        <div class="card net-card h-100 text-white">
-                            <div class="card-body d-flex flex-column">
-                                <div class="thumb thumb-meme mb-3"></div>
-                                <h5 class="card-title">Meme</h5>
-                                <p class="card-text">Internet-culture riffs and remixable image objects.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <a class="card-link" href="newartcity.html">
-                        <div class="card net-card h-100 text-white">
-                            <div class="card-body d-flex flex-column">
-                                <div class="thumb thumb-city mb-3"></div>
-                                <h5 class="card-title">New Art City</h5>
-                                <p class="card-text">A micro city of generative objects and playful topologies.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <!-- 1. GLITCH ART -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a class="card-link" href="glitch.html">
+            <div class="card project-card h-100">
+              <div class="thumb" style="background-image:url('https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/image-42e6fa93-6ee3-470e-8ba5-cf14b561d2c8_orig.png');"></div>
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color:#DA627D;">Glitch Art</h5>
+                <p class="card-text" style="color:#DA627D;">Glitchy Deers</p>
+              </div>
             </div>
-        </main>
+          </a>
+        </div>
 
-        <footer class="py-4 text-white" style="background-color: #450920;">
-            <div class="container d-flex justify-content-between align-items-center">
-                <small>© 2025 NetArt Portfolio</small>
-                <div>
-                    <a class="text-white me-3" href="about.html">About</a>
-                    <a class="text-white" href="#">Contact</a>
-                </div>
+        <!-- 2. LOGO -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a class="card-link" href="logo.html">
+            <div class="card project-card h-100">
+              <div class="thumb" style="background-image:url('https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/published/image-1.png?1761163535');"></div>
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color:#DA627D;">Logo</h5>
+                <p class="card-text" style="color:#DA627D;">Star Petal Logo</p>
+              </div>
             </div>
-        </footer>
+          </a>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></script>
-    </body>
+        <!-- 3. MEME -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a class="card-link" href="meme.html">
+            <div class="card project-card h-100">
+              <div class="thumb" style="background-image:url('https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/monke-1_orig.png');"></div>
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color:#DA627D;">Meme</h5>
+                <p class="card-text" style="color:#DA627D;">Meme Mashup</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 4. BLENDER -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a class="card-link" href="blender.html">
+            <div class="card project-card h-100">
+              <div class="thumb" style="background-image:url('https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/desk-1_orig.png');"></div>
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color:#DA627D;">Blender</h5>
+                <p class="card-text" style="color:#DA627D;">Desk Scene</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 5. NEW ART CITY -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a class="card-link" href="newartcity.html">
+            <div class="card project-card h-100">
+              <div class="thumb" style="background-image:url('images/newart.png');"></div>
+              <div class="card-body text-center">
+                <h5 class="card-title" style="color:#DA627D;">New Art City</h5>
+                <p class="card-text" style="color:#DA627D;">Moo</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="py-4 bg-dark text-white mt-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <small>© 2025 NetArt Portfolio</small>
+        <a class="text-white" href="about.html">About</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-
